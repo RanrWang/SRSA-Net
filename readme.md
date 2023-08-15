@@ -12,17 +12,29 @@ IHC Cohort: Multiplex IHC stained histological slides were collected from Liaoni
 
 
 ihc data
+
    dataset
+   
    ├── images
+   
    │   ├── fold1_0_CDK4.png
+   
    │   ├── fold1_1_D2.png
+   
    │   ├── fold1_2_D2.png
+   
    │   └── ...
+   
    │
+   
    └── masks
+   
        ├── fold1_0_CDK4.npy
+       
        ├── fold1_1_D2.npy
+       
        ├── fold1_2_D2.npy
+       
        └── ...
 
 For the masks, the first channel and the second channel denotes the negative and positive
