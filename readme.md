@@ -1,10 +1,10 @@
-#'Simultaneously segmenting and classifying cell nuclei by using multi-task learning in multiplex immunohistochemical tissue microarray sections'
-##This folder contains the implementation of the codes.
+# 'Simultaneously segmenting and classifying cell nuclei by using multi-task learning in multiplex immunohistochemical tissue microarray sections'
+## This folder contains the implementation of the codes.
 
-##Requirements: 
+## Requirements: 
 The details of environment such as python package can reference 'environment.txt'.
 
-##Data:
+## Data:
 
 It can be downloaded at: https://zenodo.org/record/7647846.
 
@@ -30,14 +30,14 @@ nuclei pixels, respectively. Note that each pixel is labelled from 0 to n, where
 number of individual nuclei detected. 0 pixels indicate background. Pixel values i indicate that the pixel belongs to the ith nucleus.  
 The last channel marks the information of all the nuclei pixels, where nuclei pixel are left as 0, otherwise 1.
 
-##Usage of Directories
+## Usage of Directories
 dataset: store data.
 
 glog-post-patch: process glog-based algorithm. main file: glog_multimask.py.
 
 utils: tools and models.
 
-##Start to train
+## Start to train
 1.set up environment.
 
 2.configure the path of dataset and checkpoint in 'train.py'.
