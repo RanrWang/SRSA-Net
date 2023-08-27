@@ -14,7 +14,8 @@ line 73 true_1_hot = torch.eye(num_classes + 1)[true.squeeze(1)]
 
 line 82 true_1_hot = torch.eye(num_classes)[true.squeeze(1)]
 
-please modify as:
+you can modify as:
+
 line 73 true_1_hot = torch.eye(num_classes + 1, device=true.device)[true.squeeze(1)]
 
 line82 true_1_hot = torch.eye(num_classes, device=true.device)[true.squeeze(1)]
