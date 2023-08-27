@@ -3,7 +3,15 @@
 
 ## Requirements: 
 The details of environment such as python package can reference 'environment.txt'.
-
+As for pathml, there is one bug.
+If you encounter this error:
+RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)
+in pathml.ml.utils dice loss,
+line 73 true_1_hot = torch.eye(num_classes + 1)[true.squeeze(1)]
+line 82 true_1_hot = torch.eye(num_classes)[true.squeeze(1)]
+please modify as:
+line 73 true_1_hot = torch.eye(num_classes + 1, device=true.device)[true.squeeze(1)]
+line82 true_1_hot = torch.eye(num_classes, device=true.device)[true.squeeze(1)]
 ## Data:
 
 It can be downloaded at: https://zenodo.org/record/7647846.
