@@ -7,6 +7,7 @@ The details of environment such as python package can reference 'environment.txt
 As for pathml(python package), there is one bug.
 
 If you encounter this error:
+
 RuntimeError: indices should be either on cpu or on the same device as the indexed tensor (cpu)
 in pathml.ml.utils dice loss,
 
